@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<!--[if lt IE 7]>
+    <div style="clear:both;height:59px;padding:0 0 0 15px;position:relative;">
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"> <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0027_Simplified Chinese.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /> </a></div>
+    <![endif]-->
+<title>基于shuipFCMS网页布局</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="head.css">
+<link rel="stylesheet" href="navBar.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="rotate.css">
+<script type='text/javascript' src='jquery-1.9.1.js'></script>
+<script type='text/javascript' src='dropMenu.js'></script>
+<script type='text/javascript' src='index.js'></script>
+</head>
+<body>
+<script>
+    $(function(){
+        $('#e_search_button').click(function(){
+            $('#keyword').submit();
+            return false;
+        });
+    })
+</script>
+<div id="header">
+  <div id="head">
+    <div id="logo" style="background: url(hei_logo.png) no-repeat;"> <a href="" style="display:block;width:328px;height:80px;"></a> </div>
+    <!--<div id="search">
+      <div id="searchKeyword">
+        <table>
+          <tr>
+            <td> <form id="keyword" onkeydown="if(event.keyCode==13)return false;" action="/s" onkeypress="pretentEnterPress();" method="post">           
+            <form id="keyword"  action="/s" method="post">
+                <input type="text" style="background: url(search.gif) no-repeat" name="searchKeyVo.keyword" placeholder="请输入搜索关键字"/>
+              </form></td>
+            <td><a id="searchLink" href="/advanceSearch.jsp">高级搜索</a></td>
+          </tr>
+        </table>
+      </div>
+    </div> -->
+  </div>
+</div>
+<!--header end-->
+<div class="navBar">
+  <div class="nav">
+    <ul class="clearfix">
+      <li><a class="drop-menu-effect" href=""><span>首页</span></a></li>
+      <li class="drop-menu-effect"> <a href=""><span>网页教程</span></a>
+        <ul class="submenu">
+          <li><a href="">HTML/XHTML</a></li>
+          <li><a href="">Dreamweaver</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>前端开发</span></a>
+        <ul class="submenu">
+          <li><a href="">Javascript教程</a></li>
+          <li><a href="">JQuery教程</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>PS教程</span></a>
+        <ul class="submenu">
+          <li><a href="">PS网页制作</a></li>
+          <li><a href="">PS按钮制作</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>网页特效</span></a>
+        <ul class="submenu">
+          <li><a href="">JS幻灯片</a></li>
+          <li><a href="">导航菜单</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>建站素材</span></a>
+        <ul class="submenu">
+          <li><a href="">PNG小图标</a></li>
+          <li><a href="">GIF小图标</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>网站运营</span></a>
+        <ul class="submenu">
+          <li><a href="">SEO网站优化</a></li>
+          <li><a href="">网络营销</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>站长杂谈</span></a>
+        <ul class="submenu">
+          <li><a href="">互联网资讯</a></li>
+          <li><a href="">人物访谈</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>设计欣赏</span></a>
+        <ul class="submenu">
+          <li><a href="">酷站欣赏</a></li>
+          <li><a href="">标志LOGO</a></li>
+        </ul>
+      </li>
+      <li class="drop-menu-effect"> <a href=""><span>常用软件</span></a> </li>
+    </ul>
+  </div>
+</div>
+<!-- lianjie? navBar end-->
+
+<div id="scroll"> 
+  <!-- 可以设置轮播器背景颜色的个数 -->
+  <div id="1" class="wrap main">
+    <div class="scrollMessage comp-0 "> <a href="">
+      <p class="scrollNewsTitle"> 马云：菜鸟让我们对社会、未来有敬畏之... </p>
+      </a>
+      <div class="newsDescribe">
+        <p> &nbsp;&nbsp; &nbsp;马云：菜鸟让我们对社会、未来有敬畏之... </p>
+        <a class="comp-0" href="">更多...</a> </div>
+    </div>
+    <div class="scrollImg"> <a href="" class="current-image"><img
+                        src="1.jpg" height="350px"
+                        width="543px" /></a> <a href="" class="prev-image"><img
+                        src="2.jpg"
+                        height="350px" width="543px" /></a> <a href="" class="next-image"><img
+                        src="3.jpg"
+                        height="350px" width="543px" /></a> </div>
+  </div>
+  <div id="2" class="wrap hiddenLeft hide">
+    <div class="scrollMessage comp-0"> <a href="">
+      <p class="scrollNewsTitle"> 传网店将收5%营业税 淘宝卖家一年或缴税400亿</p>
+      </a>
+      <div class="newsDescribe">
+        <p> &nbsp; &nbsp; 传网店将收5%营业税 淘宝卖家一年或缴税... </p>
+        <a class="comp-0"
+                   href="">更多...</a> </div>
+    </div>
+    <div class="scrollImg"> <a href="" class="current-image"><img
+                    src="2.jpg" height="350px"
+                    width="543px" /></a> </div>
+  </div>
+  <div id="3" class="wrap hiddenLeft hide">
+    <div class="scrollMessage comp-0"> <a href="">
+      <p class="scrollNewsTitle"> 阿里封杀电商导购原因：分流淘宝</p>
+      </a>
+      <div class="newsDescribe">
+        <p> &nbsp; &nbsp; 写在前面的话：当阿里巴巴买百度关键字，封杀美丽说、蘑菇街之时，谁还曾记得，彼时，... </p>
+        <a class="comp-0"
+                   href="">更多...</a> </div>
+    </div>
+    <div class="scrollImg"> <a href="" class="current-image"><img
+                    src="3.jpg" height="350px"
+                    width="543px" /></a> </div>
+  </div>
+  <div class="scrollContrl"> <span> <a href="" onclick="scrollPrev();return false;"><img src="scrollLeft.jpg" /></a></span> <span><a id="controlAuto" href="" alt=""><img id="stopBegin" src="scrollStop.jpg"/></a></span> <span><a href="" onclick="scrollNext();return false;"><img src="scrollRight.jpg" /></a></span> </div>
+</div>
+<!--scroll end link?-->
+
+<div id="body">
+  <div id="bodyRight">
+    <div id="focus">
+      <div class="news">
+        <div class="newsTitle">
+          <div class="right">
+            <h2>站长杂谈</h2>
+            <a href="">更多&gt;</a> </div>
+        </div>
+        <div class="newsList">
+          <div class="ps">
+            <dl>
+              <dt><a href="" target="_blank" title="为什么新浪微博广告屡遭骂名而豆瓣广告收获好评？"><img src="51c52009459ad.jpg" alt="为什么新浪微博广告屡遭骂名而豆瓣广告收获好评？"/></a></dt>
+              <dd class="textname"><a href="" title="为什么新浪微博广告屡遭骂名而豆瓣广告收获好评？">为什么新浪微博广告屡遭骂名而豆瓣广告收获好评？</a></dd>
+              <dd  class="texttxt" title="">
+                <p> 橘生淮南则为橘，生于淮北则为枳，这句话在社交网络的广告上同样适用。打开新浪微博和豆瓣，你会看到两种风格完全不同的广告，看了二者的广告，你可能<a href="" target="_blank">[查看全文]</a></p>
+                .</dd>
+              <div style="clear:both"></div>
+            </dl>
+            <dl>
+              <ul>
+                <li><a href="" title="反击易迅 京东欲推一日四送"><span>反击易迅&nbsp;&nbsp;京东欲推一日四送</span></a> <span class="time">06-22</span></li>
+                <li><a href="" title="狗狗搜索宣布关站 版权问题难解"><span>狗狗搜索宣布关站&nbsp;&nbsp;版权问题难解</span></a> <span class="time">07-23</span></li>
+                </li>
+                <li><a href="" title="大众点评网遭“黑手”：网页跳转天猫"><span>大众点评网遭“黑手”：网页跳转天猫</span></a> <span class="time">05-01</span></li>
+                </li>
+              </ul>
+              <ul style="display: block;float: right">
+                <li><a href="" title=""><span>反击易迅&nbsp;&nbsp;京东欲推一日四送</span></a> <span class="time">06-22</span></li>
+              </ul>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="newsTitle">
+        <div class="focusRight">
+          <h2>最近更新|New_news</h2>
+          <a href="">更多></a> </div>
+      </div>
+      <div class="focusList">
+        <p> <span><img src="news_tip.jpg" /></span> <span><a href="" title="标志LOGO">【标志LOGO】</a> <a href="" title=" 26款以云为设计元素的logo欣赏"> 26款以云为设计元素的logo欣赏</a></span> <span class="time" >2015-04-30</span> </p>
+        <p> <span><img src="news_tip.jpg" /></span> <span><a href="" title="酷站欣赏">【酷站欣赏】</a> <a href="" title=" Digital Atelier创意网站开发工作室网站欣赏"> Digital Atelier创意网站开发工作室网站欣赏 </a></span> <span class="time">2015-04-30</span> </p>
+        <p> <span><img src="news_tip.jpg" /></span> <span><a href="" title="HTML/XHTNL">【HTML/XHTNL】</a> <a href="" title="alt属性和title属性的区别与介绍">alt属性和title属性的区别与介绍</a> </span> <span class="time">2015-04-10</span> </p>
+        <p> <span><img src="news_tip.jpg" /></span> <span><a href="" title="javascript教程">【javascript教程】</a> <a href="" title="分享前端开发JavaScript中常使用的小技巧语句">分享前端开发JavaScript中常使用的小技巧语句</a> </span> <span class="time">2015-05-10</span></p>
+        <p></p>
+        <div style="clear: both"></div>
+      </div>
+      <div class="news">
+        <div class="newsTitle">
+          <div class="right">
+            <h2>热门点击|Hot_News</h2>
+            <a href="">更多&gt;</a> </div>
+        </div>
+        <div class="newsList">
+          <p> <span><img src="news_tip.jpg" /></span> <span><a href="" title=""></a></span> <span class="time">2015-05-04</span> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--bodyright end-->
+  <div id="bodyLeft">
+    <div id="notification">
+      <div class="newsTitle">
+        <div class="notificationRight">
+          <h2>站长推荐</h2>
+          <a href="">更多></a> </div>
+      </div>
+      <div class="tabMenu">
+        <ul class="tabCtr">
+          <li><a href="t">前端开发</a></li>
+          <li class="selected"><a href="">PS教程</a></li>
+          <li><a href="">网页教程</a></li>
+        </ul>
+        <div class="tabBox">
+          <div class="hide" style="display:none;">
+            <p><span><a href="">分享前端开发JavaScript中常用的使用小技巧语句</a> </span> </p>
+          </div>
+          <div style="display: block;">
+            <div class="ps">
+              <ul>
+                <dl>
+                  <dt><a href="" target="_blank" title="PS结合AI制作钢铁侠面具模型教程"><img src="http://www.shuipfcms.com/demo/file/2013/06/51c5445ee39c5.jpg" alt="PS结合AI制作钢铁侠面具模型教程" /></a></dt>
+                  <dd class="textname"><a href="" title="PS结合AI制作钢铁侠面具模型教程">PS结合AI制作钢铁侠面具模型...</a></dd>
+                  <dd  class="texttxt" title="教程虽然用到AI，不过绘制的仅是线稿及简单的色块，没有这款软件的完全可以在PS中完成。面具构造并不复杂，不过质感部分刻画比较麻烦，想省...">教程虽然用到AI，不过绘制的仅是线稿及简单的色块，没有这款软件的完全可以在PS中...</dd>
+                  <div style="clear:both"></div>
+                  <a href="" title="PS结合AI制作钢铁侠面具模型教程">PS结合AI制作钢铁侠面具模型教程</a>
+                </dl>
+              </ul>
+            </div>
+          </div>
+          <div class="hide">
+            <p><span><a href="">【初学必看】&nbsp;html+css小总结经验教程！</a></span> </p>
+            <p><span><a href="">alt属性和title属性的区别与介绍</a></span></p>
+            <p><span><a href="">5种实现页面跳转到指定地址的办法</a></span></p>
+            <p><span><a href="">Nofollow标签是什么意思......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span></p>
+            <p><span><a href="">DreamWeaver中如何批量删除超级链接</a></span></p>
+            <p><span><a href="">DreamWeaver文件保存时提示 “发生共享......”</a></span></p>
+            <p><span><a href="">html注释条件语句 !--[if IE]...![end...</a> </span></p>
+          </div>
+        </div>
+      </div>
+      
+      <!--end tabmenu_1-->
+      
+      <div class="tabMenu">
+        <ul class="tabCtr">
+          <li><a href="">网页特效</a></li>
+          <li class="selected"><a href="">设计欣赏</a></li>
+          <li><a href="">常用软件</a></li>
+        </ul>
+        <div class="tabBox">
+          <div class="hide">
+            <ul class="tab_con">
+              <li>
+                <dl>
+                  <dt> <a href=""><img src="51c52b189fa73.jpg" alt="jquery全屏左右预览焦点图代码"/></a></dt>
+                  <dd class="span1" style="overflow:hidden;"><a title="jquery全屏左右预览焦点图代码" href="">jquery全屏左右预览焦点图</a></dd>
+                  <dd class="span2"><a title="JS幻灯片" href="">JS幻灯片&nbsp;/06-22</a></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt> <a href=""><img src="51c52ad03bc3f.jpg" alt="jquery前后图片预览焦点图效果"/></a></dt>
+                  <dd class="span1" style="overflow:hidden;"><a title="jquery前后图片预览焦点图效果" href="">jquery前后图片预览焦点图效果</a></dd>
+                  <dd class="span2"><a title="JS幻灯片" href="">JS幻灯片&nbsp;/06-22</a></dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt> <a href=""><img src="51c52a921a436.jpg" alt="伪数字尾巴官网进度条jquery焦点图效果"/></a></dt>
+                  <dd class="span1" style="overflow:hidden;"><a title="伪数字尾巴官网进度条jquery焦点图效果" href="">伪数字尾巴官网进度条jquery焦点图效果</a></dd>
+                  <dd class="span2"><a title="JS幻灯片" href="">JS幻灯片&nbsp;/06-22</a></dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div style="display: block">
+            <div class="art_pic">
+              <ul>
+                <li> <a href=""><span>26款以云设计元素的logo欣赏</span><img src="51c5b0d807938.jpg" alt="26款以云设计元素的logo欣赏"></a> </li>
+                <li> <a href=""><span>Digital Atelier创意网站开发工作室网站欣赏</span><img src="51c5b06e7462d.jpg" alt="Digital Atelier创意网站开发工作室网站欣赏"></a> </li>
+              </ul>
+              <div style="clear: both"></div>
+            </div>
+          </div>
+          <div class="hide" style="display:none;">
+            <p><span><a href="">Adobe Dreamweaver cs6汉化破解版免费下载</a></span> </p>
+            <p><span><a href="">photoshop cs5绿化破解版免费下载</a></span></p>
+            <p><span><a href=""></a></span></p>
+            <p><span><a href="">Nofollow标签是什么意思......&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></span></p>
+            <p><span><a href="">DreamWeaver中如何批量删除超级链接</a></span></p>
+            <p><span><a href="">DreamWeaver文件保存时提示 “发生共享......”</a></span></p>
+            <p><span><a href="">html注释条件语句 !--[if IE]...![end...</a> </span></p>
+          </div>
+        </div>
+      </div>
+      <!--end tabmenu_2--> 
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+  <div id="link"></div>
+  <div id="footer">
+    <div class="foot_con">
+      <div class="ul_con">
+        <ul>
+          <li class="h">关于我们</li>
+          <li><a href="">关于我们</a></li>
+          <li><a href="">加入我们</a></li>
+          <li><a href="">免责声明</a></li>
+          <li><a href="">网站地图</a></li>
+        </ul>
+        <ul>
+          <li class="h">联系我们</li>
+          <li><a>联系方式</a></li>
+          <li><a>交流QQ群</a></li>
+          <li><a>RSS订阅</a></li>
+          <li><a>给我留言</a></li>
+        </ul>
+        <ul>
+          <li class="h">其他帮助</li>
+          <li><a>在线音乐</a></li>
+          <li><a>业务合作</a></li>
+          <li><a>用户投稿</a></li>
+          <li><a>高级搜索</a></li>
+        </ul>
+      </div>
+      <div class="txt_con">
+      <!--  <p style="line-height:2;">本站资源全来源于网络,不承担任何版权问题,如果我们侵犯了您的权益,请来信告知,我们会在第一时间处理！<br />
+          copyright &#169;2013 / <a href="http://www.miitbeian.gov.cn">闽ICP备13015355号-1</a><br/>
+          ShuipFCMS内容管理系统版权所有</p>-->
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    $(function (){
+        $(window).toTop({
+            showHeight : 100});
+    });
+</script> 
+<!--footer end-->
+</body>
+</html>
